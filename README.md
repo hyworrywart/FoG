@@ -1,6 +1,6 @@
 # FoG
 
-This is the official implementation of the EMNLP 2026 paper **Foresight-on-Graph: Vision-Guided Knowledge Graph Reasoning with Large Language Models**.
+This is the official implementation of the EMNLP 2026 paper **[Foresight-on-Graph: Vision-Guided Knowledge Graph Reasoning with Large Language Models](docs/foresight-on-graph.pdf)**.
 
 ## Install
 
@@ -39,3 +39,16 @@ python -m FoG.evaluate --data-file prepared/webqsp.json --results-file outputs/w
 `hit` means any intersection between normalized predicted and gold answer sets; it is not Hits@1. F1 is calculated from normalized answer-set precision and recall.
 
 Apache-2.0 licensed. This repository does not distribute Freebase dumps or generated relation caches.
+
+## Citation
+
+If you use FoG in your research, please cite our paper:
+
+```bibtex
+@inproceedings{hu2026foresight,
+  title     = {Foresight-on-Graph: Vision-Guided Knowledge Graph Reasoning with Large Language Models},
+  author    = {Hu, Yuwei and Lei, Runlin and Wei, Zhewei and Liu, Yongchao and Hong, Chuntao and Zheng, Jiajun and Zhang, Juelu},
+  booktitle = {EMNLP 2026},
+  year      = {2026}
+}
+```
